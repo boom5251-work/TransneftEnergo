@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34004.107
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransneftEnergo.DataAccess", "TransneftEnergo.DataAccess\TransneftEnergo.DataAccess.csproj", "{434DAF3C-94E5-4700-91FB-4FADD9C9C54E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransneftEnergo.Application", "TransneftEnergo.Application\TransneftEnergo.Application.csproj", "{BACCEFF8-7789-4F11-8764-CFBE89CFD76E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{434DAF3C-94E5-4700-91FB-4FADD9C9C54E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{434DAF3C-94E5-4700-91FB-4FADD9C9C54E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{434DAF3C-94E5-4700-91FB-4FADD9C9C54E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{434DAF3C-94E5-4700-91FB-4FADD9C9C54E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BACCEFF8-7789-4F11-8764-CFBE89CFD76E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BACCEFF8-7789-4F11-8764-CFBE89CFD76E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BACCEFF8-7789-4F11-8764-CFBE89CFD76E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BACCEFF8-7789-4F11-8764-CFBE89CFD76E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {718CB9DE-CF63-4354-B606-1BC7D8FF596C}
+	EndGlobalSection
+EndGlobal
