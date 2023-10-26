@@ -111,7 +111,7 @@ namespace TransneftEnergo.Application.Controllers
                 var energyMeters = await _context.MeasuringPoints
                     .Where(measuringPoint => measuringPoint.ConsumptionObjectId == consumptionObjectId)
                     .Include(measuringPoint => measuringPoint.EnergyMeter)
-                    .Where(measuringPoint => measuringPoint.EnergyMeter.VerificationDate > DateTime.UtcNow)
+                    .Where(measuringPoint => measuringPoint.EnergyMeter.VerificationDate < DateTime.UtcNow.Date)
                     .Select(measuringPoint => measuringPoint.EnergyMeter)
                     .ToListAsync();
 
@@ -138,7 +138,7 @@ namespace TransneftEnergo.Application.Controllers
                 var currentTransformers = await _context.MeasuringPoints
                     .Where(measuringPoint => measuringPoint.ConsumptionObjectId == consumptionObjectId)
                     .Include(measuringPoint => measuringPoint.VoltageTransformer)
-                    .Where(measuringPoint => measuringPoint.VoltageTransformer.VerificationDate > DateTime.UtcNow)
+                    .Where(measuringPoint => measuringPoint.VoltageTransformer.VerificationDate < DateTime.UtcNow.Date)
                     .Select(measuringPoint => measuringPoint.VoltageTransformer)
                     .ToListAsync();
 
@@ -165,7 +165,7 @@ namespace TransneftEnergo.Application.Controllers
                 var currentTransformers = await _context.MeasuringPoints
                     .Where(measuringPoint => measuringPoint.ConsumptionObjectId == consumptionObjectId)
                     .Include(measuringPoint => measuringPoint.CurrentTransformer)
-                    .Where(measuringPoint => measuringPoint.CurrentTransformer.VerificationDate > DateTime.UtcNow)
+                    .Where(measuringPoint => measuringPoint.CurrentTransformer.VerificationDate < DateTime.UtcNow.Date)
                     .Select(measuringPoint => measuringPoint.CurrentTransformer)
                     .ToListAsync();
 
