@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using TransneftEnergo.DataAccess.Debug;
+using TransneftEnergo.DataAccess.DefaultData;
 using TransneftEnergo.DataAccess.Models;
 
 namespace TransneftEnergo.DataAccess.Context
